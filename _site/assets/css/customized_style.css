@@ -1,0 +1,196 @@
+
+#header-wrapper {
+    padding-top: 0px;
+}
+
+#title {
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 20px
+}
+
+#title h2{
+  color: white;
+}
+
+#title h1{
+  color: white;
+}
+
+.main-title{
+  padding-bottom: 0px;
+  padding-top: 4px;
+}
+
+.sub-title{
+  padding-bottom: 4px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+#description {
+  padding-bottom: 6px;
+}
+
+#first-button {
+  margin-right: 15px;
+}
+
+.ui-tooltip, .arrow:after {
+  background: rgba(34, 30, 31, 0.98);
+  border: 2px solid #d73f3f;
+}
+.ui-tooltip {
+  padding: 10px 20px;
+  color: white;
+  border-radius: 20px;
+  font: bold 14px "Source Sans Pro", Sans-Serif;
+  text-transform: uppercase;
+  box-shadow: 0 0 7px black;
+}
+.arrow {
+  width: 70px;
+  height: 16px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  bottom: -16px;
+}
+.arrow.top {
+  top: -16px;
+  bottom: auto;
+}
+.arrow.left {
+  left: 20%;
+}
+.arrow:after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: -20px;
+  width: 25px;
+  height: 25px;
+  box-shadow: 6px 5px 9px -9px black;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.arrow.top:after {
+  bottom: -20px;
+  top: auto;
+}
+.attribution-block {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: white !important;
+  opacity: 0.6;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+.ui-tooltip {
+  /* tooltip container box */
+  max-width: 450px !important;
+ }
+
+#video {
+    display: block;
+    width: 631px;
+    height: 352px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url({{ site.baseurl }}/assets/images/video_cover3.png) no-repeat top left;
+}
+
+#nav {
+  text-align: left;
+  padding: 0 5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  z-index: 70;
+  width: 100%;
+  margin: 0;
+}
+#nav > ul > li {
+  font-style: inherit;
+  font-weight: 500;
+}
+#nav > ul > li.active >a,
+#nav > ul > li >a:hover {
+  opacity: 1;
+  background-color: rgba(0,0,0,0.7);
+}
+#nav > ul > li > a {
+  color: #C7C7C7;
+  font-weight: 600;
+}
+
+.event-time {
+  width: 220px;
+  opacity: 0.8;
+}
+
+.box {
+      width: 90%;
+    margin-left: 5%;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default,
+.mapathon.ui-state-default {
+  border: none;
+  background: transparent;
+}
+
+.panel-session {
+  padding: 2px 6px;
+    background-color:  #55ACEF;
+    font-size: 13px;
+    border-radius: 4px;
+    color: white;
+    display: inline-block;
+    margin-bottom: 10px;
+    float: right;
+    margin-right: 20px;
+}
+
+.mapathon {
+  background-color: #D73F3F;
+}
+.disruptgeo {
+  background-color: #667766;
+}
+tr {
+
+    border-bottom: 1px solid #D8D8D8;
+
+}
+
+.ui-state-default .ui-icon {
+  background-image: none;
+}
+.event-content {
+  padding: 10px 0px;
+}
+.category {
+  text-align: left;
+}
+.event-description {
+    font-size: 16px;
+}
+
+#myMenu {
+  padding-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-body {
+  text-align: left;
+}
+

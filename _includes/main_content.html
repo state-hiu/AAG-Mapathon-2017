@@ -1,7 +1,3 @@
-<!-- Header -->
-			<div id="header-wrapper">
-				<div id="header">
-
 
 <script type="text/javascript">
 
@@ -30,206 +26,8 @@
 
 </script>
 
-<style>
 
-#header-wrapper {
-	padding-top: 0px;
-}
-
-#title {
-  color: white;
-  padding-top: 30px;
-  padding-bottom: 20px
-}
-
-#title h2{
-  color: white;
-}
-
-#title h1{
-  color: white;
-}
-
-.main-title{
-  padding-bottom: 0px;
-  padding-top: 4px;
-}
-
-.sub-title{
-  padding-bottom: 4px;
-  margin-top: 8px;
-  margin-bottom: 4px;
-}
-
-#description {
-  padding-bottom: 6px;
-}
-
-#first-button {
-  margin-right: 15px;
-}
-
-.ui-tooltip, .arrow:after {
-  background: rgba(34, 30, 31, 0.98);
-  border: 2px solid #d73f3f;
-}
-.ui-tooltip {
-  padding: 10px 20px;
-  color: white;
-  border-radius: 20px;
-  font: bold 14px "Source Sans Pro", Sans-Serif;
-  text-transform: uppercase;
-  box-shadow: 0 0 7px black;
-}
-.arrow {
-  width: 70px;
-  height: 16px;
-  overflow: hidden;
-  position: absolute;
-  left: 50%;
-  margin-left: -35px;
-  bottom: -16px;
-}
-.arrow.top {
-  top: -16px;
-  bottom: auto;
-}
-.arrow.left {
-  left: 20%;
-}
-.arrow:after {
-  content: "";
-  position: absolute;
-  left: 20px;
-  top: -20px;
-  width: 25px;
-  height: 25px;
-  box-shadow: 6px 5px 9px -9px black;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.arrow.top:after {
-  bottom: -20px;
-  top: auto;
-}
-.attribution-block {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  color: white !important;
-  opacity: 0.6;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  font-size: 14px;
-}
-.ui-tooltip {
-  /* tooltip container box */
-  max-width: 450px !important;
- }
-
-#video {
-    display: block;
-    width: 631px;
-    height: 352px;
-    margin-left: auto;
-    margin-right: auto;
-    background: url({{ site.baseurl }}/assets/images/video_cover3.png) no-repeat top left;
-}
-
-#nav {
-  text-align: left;
-  padding: 0 5em;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 40px;
-  z-index: 70;
-  width: 100%;
-  margin: 0;
-}
-#nav > ul > li {
-  font-style: inherit;
-  font-weight: 500;
-}
-#nav > ul > li.active >a,
-#nav > ul > li >a:hover {
-  opacity: 1;
-  background-color: rgba(0,0,0,0.7);
-}
-#nav > ul > li > a {
-  color: #C7C7C7;
-  font-weight: 600;
-}
-
-.event-time {
-  width: 220px;
-  opacity: 0.8;
-}
-
-.box {
-      width: 90%;
-    margin-left: 5%;
-}
-
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default,
-.mapathon.ui-state-default {
-  border: none;
-  background: transparent;
-}
-
-.panel-session {
-  padding: 2px 6px;
-    background-color:  #55ACEF;
-    font-size: 13px;
-    border-radius: 4px;
-    color: white;
-    display: inline-block;
-    margin-bottom: 10px;
-    float: right;
-    margin-right: 20px;
-}
-
-.mapathon {
-  background-color: #D73F3F;
-}
-.disruptgeo {
-  background-color: #667766;
-}
-tr {
-
-    border-bottom: 1px solid #D8D8D8;
-
-}
-
-.ui-state-default .ui-icon {
-  background-image: none;
-}
-.event-content {
-  padding: 10px 0px;
-}
-.category {
-  text-align: left;
-}
-.event-description {
-    font-size: 16px;
-}
-
-#myMenu {
-  padding-top: 10px;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-.modal-body {
-  text-align: left;
-}
-
-</style>
-
-<!--use modals instead
+<!--using modals instead of accordians
 <script>
   $(function() {
     $('table').accordion({header: 'h4.category', collapsible: true, active: false  });
@@ -237,94 +35,87 @@ a {
 </script>
 -->
 
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/customized_style.css" />
+
+
 {% include modals.html %}
 
-<nav id="nav">
-    <ul id="myMenu">
-      <li data-menuanchor="home" class="active"><a href="{{ site.baseurl }}/index.html#home">Home</a></li>
-      <li data-menuanchor="info"><a href="{{ site.baseurl }}#info" id="about-button">Info</a></li>
+<!-- Header -->
+<div id="header-wrapper">
+  <div id="header">
 
-      <li data-menuanchor="schedule">
-        <a href="{{ site.baseurl }}/index.html#schedule">Schedule</a>
-      </li>
-<!--
-      <li data-menuanchor="agendaPage"><a href="{{ site.baseurl }}/index.html#agendaPage" id="agenda-button">Agenda</a></li>-->
+    <nav id="nav">
+        <ul id="myMenu">
+          <li data-menuanchor="home" class="active"><a href="{{ site.baseurl }}/index.html#home">Home</a></li>
+          <li data-menuanchor="info"><a href="{{ site.baseurl }}#info" id="about-button">Info</a></li>
 
-      <li>
-      <a href="http://twitter.com/home?status=Join me at %23WHMapathon for a fun way to learn open mapping and to join a global network of civic innovators mapathon.us"><img src="{{ site.baseurl }}/assets/images/Twitter_Logo_Blue.png" width="32" style="top:0px;position:relative"></a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-      </li>
-    </ul>
-</nav>
+          <li data-menuanchor="schedule">
+            <a href="{{ site.baseurl }}/index.html#schedule">Schedule</a>
+          </li>
+    <!--
+          <li data-menuanchor="agendaPage"><a href="{{ site.baseurl }}/index.html#agendaPage" id="agenda-button">Agenda</a></li>-->
+
+          <li>
+          <a href="http://twitter.com/home?status=Join me at %23WHMapathon for a fun way to learn open mapping and to join a global network of civic innovators mapathon.us"><img src="{{ site.baseurl }}/assets/images/Twitter_Logo_Blue.png" width="32" style="top:0px;position:relative"></a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          </li>
+        </ul>
+    </nav>
 
 
-<div id="fullpage">
+    <div id="fullpage">
 
       <div class="section">
         <div class="slide active">
           <div id="title">
-                  <h1 class="main-title">The 2nd Mapathon @ AAG</h1>
-                  <h2 class="sub-title">April 6-8, Boston</h2>
-                  <div class="quiet" id="description" style="font-size:20px">Join us for a three day Mapathon and contribute to OpenStreetMap for humanitarian efforts during the AAG Conference</div> 
-
+            <h1 class="main-title">The 2nd Mapathon @ AAG</h1>
+            <h2 class="sub-title">April 6-8, Boston</h2>
+            <div class="quiet" id="description" style="font-size:20px">Join us for a three day Mapathon and contribute to OpenStreetMap for humanitarian efforts during the AAG Conference</div> 
 
 <!--
                   <a href="{{ site.baseurl }}/index.html#projectPage" class="button"> RSVP today!</a>
                 -->
 
-  <!--
+<!--
                   <div class="attribution-block">Map designed by <a href="https://www.mapbox.com/about/team/#eric-fischer">Eric Fisher</a> <a href="https://www.mapbox.com/about/maps/">©Mapbox</a> <a href="http://www.openstreetmap.org/about/">©OpenStreetMap</a></div>
-  -->
-              </div>
-					<div id="banner">
-  						
-							
-					</div>
+-->
+          </div>
+          <div id="banner"></div>
         </div>
+      </div>
 
-    </div>
 
-
-		<!-- Intro -->
-
-    <div class="section">
-          <div class="row" style="font-size:20px">
-
-              <div id="summary-text" style="padding-left: 80px;width:65%;">
-                  <!--<h1>Map with Us</h1>-->
-                  <br>
-                  
-                  <div style="margin-left:50px;margin-right:50px;margin-top:30px;margin-bottom:40px;color: #fff;font-weight: 400;text-align: left;">
-                      This is the 2nd year a Mapathon is happening at AAG. Conference attendees can join a community of online mappers to contribute to OpenStreetMap for humanitarian efforts. Using satellite imagery and freely available OpenStreetMap editing platforms, participants will trace, edit, and label key infrastructure (buildings, roads, etc.), environmental features, and other objects for the creation of openly available real data to produce maps that assist humanitarian and community efforts.
-                      <br> <br>
-                      This event will feature a wide array of impactful speakers from academia, government, and the private sector. The first Mapathon on Friday afternoon will be hosted by MIT on campus, with mapping projects supporting the Presidential Emergency Plan for Aids Relief (PEPFAR). The 2nd mapathon on Saturday Afternoon will be back in the Mapathon lounge and will feature a few different mapping projects in South America. All events are open to the public, you just need to RSVP. 
-                      <br> <br>
-                      The Mapathon will promote themes of shared humanitarian interest, and mapping will be coordinated through the Humanitarian OpenStreetMap Team’s Tasking Manager. Recognizing the power that Mapathons have to educate, engage, and empower the public, the organizers hope that at the end of the conference, participants will have made significant contributions towards improved maps to support humanitarian response and sustainable development efforts. For more information about the Mapathon, please e-mail  <a href="mailto:MapGive@state.gov">MapGive@state.gov</a>.
-
-                      <p><p>
-                  </div>
-              </div>
-
-              <!--
-              <div id="summary-section" style="padding-right: 80px;width:35%;">
-                  <ul>
-                    
-                    <div style="margin-left:50px;margin-right:50px;margin-top:60px;margin-bottom:50px;color: #fff;font-weight: 400;text-align: left;">
-                      Host a satellite event. Your event doesn’t have to be at the exact same time as the mapathon at AAG. We encourage you to schedule a time and place that works for you. Invite your local citizen cartographer friends, and register your project. 
+      <!-- Intro -->
+      <div class="section">
+            <div class="row" style="font-size:20px">
+                <div id="summary-text" style="padding-left: 80px;width:65%;">
+                    <!--<h1>Map with Us</h1>-->
+                    <br>
+                    <div style="margin-left:50px;margin-right:50px;margin-top:30px;margin-bottom:40px;color: #fff;font-weight: 400;text-align: left;">
+                        This is the 2nd year a Mapathon is happening at AAG. Conference attendees can join a community of online mappers to contribute to OpenStreetMap for humanitarian efforts. Using satellite imagery and freely available OpenStreetMap editing platforms, participants will trace, edit, and label key infrastructure (buildings, roads, etc.), environmental features, and other objects for the creation of openly available real data to produce maps that assist humanitarian and community efforts.
+                        <br> <br>
+                        This event will feature a wide array of impactful speakers from academia, government, and the private sector. The first Mapathon on Friday afternoon will be hosted by MIT on campus, with mapping projects supporting the Presidential Emergency Plan for Aids Relief (PEPFAR). The 2nd mapathon on Saturday Afternoon will be back in the Mapathon lounge and will feature a few different mapping projects in South America. All events are open to the public, you just need to RSVP. 
+                        <br> <br>
+                        The Mapathon will promote themes of shared humanitarian interest, and mapping will be coordinated through the Humanitarian OpenStreetMap Team’s Tasking Manager. Recognizing the power that Mapathons have to educate, engage, and empower the public, the organizers hope that at the end of the conference, participants will have made significant contributions towards improved maps to support humanitarian response and sustainable development efforts. For more information about the Mapathon, please e-mail  <a href="mailto:MapGive@state.gov">MapGive@state.gov</a>.
+                        <p><p>
                     </div>
-                    <li><a href="https://docs.google.com/a/mapbox.com/forms/d/1o7uJmGYEhFYNUGV13fPThTbwW7zINflxq99cHKHDmJ0/viewform?c=0&w=1" class="button alt small">Register a Satellite Event</a></li>
-                  </ul>
-              </div>
-              -->
+                </div>
+                <!--
+                <div id="summary-section" style="padding-right: 80px;width:35%;">
+                    <ul>
+                      
+                      <div style="margin-left:50px;margin-right:50px;margin-top:60px;margin-bottom:50px;color: #fff;font-weight: 400;text-align: left;">
+                        Host a satellite event. Your event doesn’t have to be at the exact same time as the mapathon at AAG. We encourage you to schedule a time and place that works for you. Invite your local citizen cartographer friends, and register your project. 
+                      </div>
+                      <li><a href="https://docs.google.com/a/mapbox.com/forms/d/1o7uJmGYEhFYNUGV13fPThTbwW7zINflxq99cHKHDmJ0/viewform?c=0&w=1" class="button alt small">Register a Satellite Event</a></li>
+                    </ul>
+                </div>
+                -->
+            </div>
         </div>
-    </div>
-
-
 
 
     <div class="section">
-
-          
 
           <div class="slide active" data-anchor="slide1">
 
@@ -337,7 +128,7 @@ a {
                       <h3 style="padding-top:10px">All events will take place in the Mapathon Lounge</h3>
 
 
-            				  <table border="0">
+                              <table border="0">
                       <tr>
                           <td class="event-time">8:00AM – 9:40AM</td>
                           <td class="event-content">
@@ -500,7 +291,6 @@ a {
               </div>
 
           </div>
-
 
     </div>
 
