@@ -875,3 +875,19 @@
 .bold {
     font-weight:600;
 }
+
+#summary-section {
+    padding-right: 80px;
+    width:35%;
+    margin-top:100px;
+}
+
+.summary-section-text {
+    color: black;
+    font-weight: 400;
+    padding: 20px;
+    background-color: rgba(255,255,255,.9);
+    text-align: center;
+    border-radius: 20px;
+}
+
