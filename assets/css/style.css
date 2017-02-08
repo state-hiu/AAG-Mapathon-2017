@@ -707,13 +707,14 @@
 
     #banner
     {
-        background: #9bcaff url('../images/1522-AAG-Mapathon_Boston_web.jpg');
+        background: url('../images/1522-AAG-Mapathon_Boston_web2.jpg');
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
         text-align: center;
         width: 1800px;
-        height: 800px;
+        height: 700px;
+        margin: 0 auto;
     }
 
         #banner header
