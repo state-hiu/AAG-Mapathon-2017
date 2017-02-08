@@ -717,6 +717,14 @@
         margin: 0 auto;
     }
 
+    @media (max-width: 1600px) {
+        #banner {
+        background-position: initial;
+        background-size: initial;
+        }
+
+    }
+
         #banner header
         {
             background-color: #252122;
