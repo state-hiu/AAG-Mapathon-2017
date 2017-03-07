@@ -717,10 +717,21 @@
         margin: 0 auto;
     }
 
+
+
     @media (max-width: 1600px) {
         #banner {
         background-position: initial;
         background-size: initial;
+        }
+
+    }
+
+        @media (max-width: 500px) {
+        #banner {
+            background-size: cover;
+            width: 800px;
+            height: 400px;
         }
 
     }
@@ -889,5 +900,49 @@
     background-color: rgba(255,255,255,.9);
     text-align: center;
     border-radius: 20px;
+}
+
+.description {
+  margin-left:50px;
+  margin-right:50px;
+  margin-bottom:40px;
+  color: #fff;font-weight: 400;
+  text-align: left;height: 90%;
+  font-size: 1.1vw;
+  line-height: 1.4;
+}
+
+.summary-text {
+  padding-left: 80px;
+  width:52%;
+  height: 75%;
+  margin-top:75px;
+}
+
+
+
+@media (max-width: 600px) {
+  .summary-text {
+    padding-left: 40px;
+    width: initial;
+    height: initial;
+    margin-top: 40px;
+  }
+
+  #summary-section {
+    padding-right: 0px;
+    width: initial%;
+    margin-top: 40px;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .summary-section-text {
+    padding-right: 25px;
+  }
+
+
 }
 
