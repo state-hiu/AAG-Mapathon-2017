@@ -912,7 +912,7 @@
   line-height: 1.4;
 }
 
-.summary-text {
+#summary-text {
   padding-left: 80px;
   width:52%;
   height: 75%;
@@ -922,7 +922,7 @@
 
 
 @media (max-width: 600px) {
-  .summary-text {
+  #summary-text {
     padding-left: 40px;
     width: initial;
     height: initial;
