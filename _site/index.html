@@ -14,7 +14,7 @@
         <!--[if lte IE 8]><script src="/assets/css/ie/html5shiv.js"></script><![endif]-->
         <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
-        <link rel="stylesheet" href="/assets/css/jquery.fullpage.css" />
+        <link rel="stylesheet" href="http://localhost:4000/assets/css/jquery.fullpage.css" />
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 
@@ -60,7 +60,7 @@
   <meta name="twitter:title" content="The 2nd Mapathon @ AAG">
 
 
-  <meta name="twitter:url" content="/">
+  <meta name="twitter:url" content="http://localhost:4000/">
 
 
   <meta name="twitter:description" content="A multiple day Mapathon to contribute to OpenStreetMap for humanitarian efforts during the AAG Conference">
@@ -78,8 +78,8 @@
 
         //fullpage.js
         $('#fullpage').fullpage({
-            anchors:['home', 'info', 'schedule', 'footer'],
-            sectionsColor: ['#333', '#008348', '#fffff', '#000', '#000'],
+            anchors:['home', 'info', 'schedule', 'projects', 'footer'],
+            sectionsColor: ['#333', '#008348', '#333', '#fffff', '#000'],
             loopHorizontal: false,
             menu: '#myMenu',
         });
@@ -131,7 +131,7 @@
                 <p><strong>Chair:</strong>  Ian Rossiter</p>
                 <p><strong>Participants:</strong>  
                 </br>
-                Presenter: Jake Wade, <i>Building Data from the Ground Up for FLooding and Disaster Management in Hopkins, Belize</i>
+                Presenter: Jake Wade, <i>Building Data from the Ground Up for Flooding and Disaster Management in Hopkins, Belize</i>
                 </br>
                 Co-Presenter: Amanda Ashby
                 </br>
@@ -175,7 +175,7 @@
                 <p><strong>Chair:</strong>  Dorris Scott</p>
                 <p><strong>Participants:</strong>  
                 </br>
-                Presenter: Colleen Hammelman, <i>Affective methos in community-based participatory research</i>
+                Presenter: Colleen Hammelman, <i>Affective methods in community-based participatory research</i>
                 </br>
                 Presenter: Nehal El-Hadi, <i>The Planner and the Online Archive</i>
                 </br>
@@ -208,6 +208,7 @@
             <ul>
                 <li>&#8226; network with community organizers and students</li>
                 <li>&#8226; learn how to foster your own local OpenStreetMap community</li>
+                <li>&#8226; Posters on display:  Community Mapping, Open Cartographies, or Volunteer Geographic Information </li>
                 <li>&#8226; Advanced mapping demonstration using JOSM, the advanced OpenStreetMap editor</li>
             </ul>
 
@@ -274,7 +275,7 @@
                 </br>
                 What kinds of "expertise" do they hope you can provide? How have you responded to those requests?
                 </br>
-                Communities may look to academics for both substantive expertise--knowledge about a particular issue or experience working within certain theoretical frameworks--or for technical asistnace with research design and implementation. As a researcher, are you more inlicned to provide input with one of these over the other?
+                Communities may look to academics for both substantive expertise--knowledge about a particular issue or experience working within certain theoretical frameworks--or for technical assistance with research design and implementation. As a researcher, are you more inclined to provide input with one of these over the other?
                 </br>
                 How does your own insider/outsider status (with regards to race/class/gender/regional/etc. identities) with communities shape the kinds of input you feel comfortable providing or the ways you speak with/for them?
                 </br>
@@ -417,7 +418,7 @@
       </div>
       <div class="modal-body">
         <div class="event-description">
-            Join us across the river at MIT for the Friday afternoon Mapathon. We will be focusing Using satellite imagery and freely available OpenStreetMap editing platforms, participants will trace, edit, and label key infrastructure (buildings, roads, etc.), environmental features, and other objects for the creation of openly available real data to produce maps that assist humanitarian and community efforts. Don't forget to bring your laptop to participate.<p>
+            Join us across the river at MIT for the Friday afternoon Mapathon. Using satellite imagery and freely available OpenStreetMap editing platforms, participants will trace, edit, and label key infrastructure (buildings, roads, etc.), environmental features, and other objects for the creation of openly available real data to produce maps that assist humanitarian and community efforts. Don't forget to bring your laptop to participate.<p>
 The schedule for the day will include a short set of lightning talks by MIT students and researchers using OpenStreetMap and performing emergency mapping, an intro to some of the tools, and a mapathon with mapping projects supporting the Presidential Emergency Plan for Aids Relief (PEPFAR). Pizza and drinks will be provided, thanks to our sponsor <a href="https://actionet.com">ActioNet</a>.
             <p><strong>1:30pm</strong>  Event start - Opening Remarks and Welcome</p>
             <p><strong>2:20pm</strong>  <a href="https://mfc.mit.edu/flocktracker"> FlockTracker</a> Project Introduction</p>
@@ -688,7 +689,7 @@ The U.S. Geological Survey (USGS) and the U.S. Agency for International Developm
 Heavy rains in Peru have caused massive flooding and mudslides in many parts of the country. The floods have resulted in fatalities and displacement, and have caused widespread damage to homes, roads, schools, and other infrastructure, especially along the northern coastal areas. You will be mapping some of the places greatest affected by the flooding and identified by the Humanitarian OpenStreetMap Team (HOT) to be in need of mapping.
 </i></p>
             <p><strong>1:40pm</strong>  Introduction to OpenStreetMap and Mapping Tools</p>
-            <p><strong>2:00pm</strong>  Open Mapping Session! Along with Featured Lightning Talks with Missing Maps and the American Red Cross</p>
+            <p><strong>2:00pm</strong>  Open Mapping Session! Along with Featured Lightning Talks from: 1) Open Mapping Initiatives in Latin America, Missing Maps and the American Red Cross 2) Tufts GIS Expo Explorer & The Open Geoportal Federation, Patrick Florance, Tufts University </p>
             <p><strong>5:00pm</strong>  Wrap-up and Awards</p>
             <p><strong>5:20pm</strong>  Offsite: Informal Happy Hour</p>
         </div>
@@ -855,6 +856,11 @@ Boston, 02116
           <li data-menuanchor="schedule">
             <a href="/index.html#schedule">Schedule</a>
           </li>
+
+          <li data-menuanchor="projects">
+            <a href="/index.html#projects">Projects</a>
+          </li>
+
     <!--
           <li data-menuanchor="agendaPage"><a href="/index.html#agendaPage" id="agenda-button">Agenda</a></li>-->
 
@@ -1165,6 +1171,39 @@ Boston, 02116
               </div>
 
           </div>
+
+    </div>
+
+    <div class="section">
+      <!-- projects section -->
+      <h1> Map Jam I </h1>
+      <p>
+        <a href="http://hotosm.github.io/tracing-guides/guide/josm101-part1.html" target="_blank">JOSM 101: Part I</a>
+        <br>
+        <a href="http://hotosm.github.io/tracing-guides/guide/josm101-part2.html" target="_blank">JOSM 101: Part II</a>
+      </p>
+      <h2> other useful JOSM links </h2>
+      <p>
+        MapBox has great <a href="https://www.mapbox.com/mapping/" target="_blank">resources on JOSM and advanced mapping</a>
+      </br>
+        <a href="https://josm.openstreetmap.de/wiki/Shortcuts" target="_blank">JOSM shortcuts</a>
+      </p>
+
+      <h1> Mapathon @ MIT </h1>
+      <p>
+        <a href="http://tasks.hotosm.org/project/2637" target="_blank">San Pedro, Cote d'Ivoire #2637</a>
+        <br>
+        <a href="http://tasks.hotosm.org/project/2556" target="_blank">Mbeya, Tanzania #2556</a>
+      </p>
+
+<!--
+      <h1> Saturday Mapternoon </h1>
+      <p>
+        <a href="http://hotosm.github.io/tracing-guides/guide/josm101-part1.html" target="_blank">JOSM 101: Part I</a>
+        <br>
+        <a href="http://hotosm.github.io/tracing-guides/guide/josm101-part2.html" target="_blank">JOSM 101: Part II</a>
+      </p>
+-->
 
     </div>
 

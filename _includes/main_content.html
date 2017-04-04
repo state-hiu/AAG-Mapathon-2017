@@ -5,8 +5,8 @@
 
         //fullpage.js
         $('#fullpage').fullpage({
-            anchors:['home', 'info', 'schedule', 'footer'],
-            sectionsColor: ['#333', '#008348', '#fffff', '#000', '#000'],
+            anchors:['home', 'info', 'schedule', 'projects', 'footer'],
+            sectionsColor: ['#333', '#008348', '#333', '#fffff', '#000'],
             loopHorizontal: false,
             menu: '#myMenu',
         });
@@ -52,6 +52,11 @@
           <li data-menuanchor="schedule">
             <a href="{{ site.baseurl }}/index.html#schedule">Schedule</a>
           </li>
+
+          <li data-menuanchor="projects">
+            <a href="{{ site.baseurl }}/index.html#projects">Projects</a>
+          </li>
+
     <!--
           <li data-menuanchor="agendaPage"><a href="{{ site.baseurl }}/index.html#agendaPage" id="agenda-button">Agenda</a></li>-->
 
@@ -362,6 +367,39 @@
               </div>
 
           </div>
+
+    </div>
+
+    <div class="section">
+      <!-- projects section -->
+      <h1> Map Jam I </h1>
+      <p>
+        <a href="http://hotosm.github.io/tracing-guides/guide/josm101-part1.html" target="_blank">JOSM 101: Part I</a>
+        <br>
+        <a href="http://hotosm.github.io/tracing-guides/guide/josm101-part2.html" target="_blank">JOSM 101: Part II</a>
+      </p>
+      <h2> other useful JOSM links </h2>
+      <p>
+        MapBox has great <a href="https://www.mapbox.com/mapping/" target="_blank">resources on JOSM and advanced mapping</a>
+      </br>
+        <a href="https://josm.openstreetmap.de/wiki/Shortcuts" target="_blank">JOSM shortcuts</a>
+      </p>
+
+      <h1> Mapathon @ MIT </h1>
+      <p>
+        <a href="http://tasks.hotosm.org/project/2637" target="_blank">San Pedro, Cote d'Ivoire #2637</a>
+        <br>
+        <a href="http://tasks.hotosm.org/project/2556" target="_blank">Mbeya, Tanzania #2556</a>
+      </p>
+
+<!--
+      <h1> Saturday Mapternoon </h1>
+      <p>
+        <a href="http://hotosm.github.io/tracing-guides/guide/josm101-part1.html" target="_blank">JOSM 101: Part I</a>
+        <br>
+        <a href="http://hotosm.github.io/tracing-guides/guide/josm101-part2.html" target="_blank">JOSM 101: Part II</a>
+      </p>
+-->
 
     </div>
 
